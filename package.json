@@ -1,0 +1,21 @@
+{
+  "name": "chat-online",
+  "version": "1.0.0",
+  "description": "I learn socket.io",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "snowpack dev"
+  },
+  "keywords": [],
+  "author": "Szymon Gniadek",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}

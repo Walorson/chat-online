@@ -1,0 +1,53 @@
+@font-face {
+    font-family: punk-typewriter;
+    src: url("Punk\ Typewriter.otf");
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+#chat {
+    border: 2px solid gray;
+    width: 600px;
+    height: 400px;
+    overflow-y: auto;
+}
+.line {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input {
+    width: 400px;
+    height: 33px;
+}
+.message {
+    background-color: lightgray;
+    padding: 0 10px;
+    font-family: punk-typewriter;
+    font-size: 3rem;
+}
+.message:nth-of-type(2n) {
+    background-color: rgb(183, 183, 183);
+}
+.message::selection {
+    background-color: rgb(143, 153, 227);
+}
+#nickname-info {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
